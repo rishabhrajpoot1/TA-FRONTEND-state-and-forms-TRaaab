@@ -1,0 +1,32 @@
+.active {
+    display: block;
+    width: 100%;
+    padding: 2rem 0.2rem;
+  }
+  .disable {
+    display: none;
+  }
+  body {
+    height: 97vh;
+    background-color: rgb(255, 241, 250);
+    border: 3px dotted brown;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin:10rem 5rem;
+    align-self: center;
+  }
+  .flex {
+    display: flex;
+  }
+
+  .question{
+      border: 2px solid black;
+      margin-bottom: 2rem;
+      width: 100%;
+      padding: 1rem;
+      background-color: rgb(255, 204, 136);
+  }
