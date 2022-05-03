@@ -1,0 +1,62 @@
+body {
+    position: relative;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  .movie {
+    border: 6px solid rgb(255, 0, 0);
+    width: 94%;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  }
+  .movie__section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .modal__styles {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-size: larger;
+    padding: 30px;
+  }
+  .cross {
+    text-align: right;
+    margin-right: 30px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .gallery img {
+    margin: 10px;
+    width: 200px;
+    border: 2px solid orange;
+  }
+  .full {
+    width: 100%;
+  }
+  .full .movie__section {
+    width: 80%;
+    margin: 0 auto;
+  }
+  article button {
+    visibility: hidden;
+  }
+  article:hover button {
+    visibility: visible;
+  }
+  
