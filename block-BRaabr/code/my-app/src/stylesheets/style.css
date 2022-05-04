@@ -1,0 +1,27 @@
+body{
+  background-color: rgb(174, 226, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+input{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.error {
+  border: 0;
+  color: red;
+  border: 5px solid red;
+}
+
+.submit{
+  width: 100%;
+}
+
+.none{
+  display: none;
+}
