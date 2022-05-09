@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.display {
+  height: 100vh;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.display p {
+  color: white;
+}
+.none {
+  display: none;
+}
+
+.button{
+   background-color: black;
+   color: white;
+   padding: 3px;
+}
