@@ -15,14 +15,12 @@ class App extends React.Component {
       toggle: false,
     };
   }
-  handleClick = () => {
-    console.log('hello');
-  };
   handleSort = (size) => {
-    this.setState({
+   this.setState({
       sizes: [...this.state.sizes, size],
     });
   };
+
   handleSubmit = (event) => {
     event.preventDefault();
     this.setState({
@@ -46,6 +44,13 @@ class App extends React.Component {
   handleCart = () => {
     this.setState({
       toggle: !this.state.toggle,
+    });
+  };
+
+  addQuantity = (each, index) => {
+    this.setState({
+      activeIndex: this.state.activeIndex === index ? null : index,
+      quantity: this.state.quantity + 1,
     });
   };
 
@@ -80,51 +85,53 @@ class App extends React.Component {
     console.log();
     return (
       <>
-        <section className='w-7/12 border md:w-7/12 border-red-300 flex flex-wrap'>
+      <h1>Shopping Cart</h1>
+      <section className='sort'>
+        <section>
           <button
-            className='border border-green-500 p-3 rounded-full m-2'
+            
+            onClick={() => {this.handleSort('XS');
+          }}
+          className='size'
+          >
+            XS
+          </button>
+          <button
+            className='size'
             onClick={() => this.handleSort('X')}
           >
             X
           </button>
           <button
-            className='border border-green-500 p-3 rounded-full m-2'
-            onClick={() => this.handleSort('L')}
+            className='size'
+            onClick={() => this.handleSort('S')}
           >
-            L
+            S
           </button>
           <button
-            className='border border-green-500 p-3 rounded-full m-2'
-            onClick={() => this.handleSort('XL')}
-          >
-            XL
-          </button>
-          <button
-            className='border border-green-500 p-3 rounded-full m-2'
-            onClick={() => this.handleSort('XXL')}
-          >
-            XXL
-          </button>
-          <button
-            className='border border-green-500 p-3 rounded-full m-2'
+          className='size'
             onClick={() => this.handleSort('M')}
           >
             M
           </button>
           <button
-            className='border border-green-500 p-3 rounded-full m-2'
-            onClick={() => this.handleSort('XS')}
+            className= 'size'
+            onClick={() => this.handleSort('L')}
           >
-            XS
+            L
           </button>
           <button
-            className='border border-green-500 p-3 rounded-full m-2'
-            onClick={() => this.handleSort('S')}
+            className='size'
+            onClick={() => this.handleSort('XL')}
           >
-            S
+            XL
           </button>
-        </section>
-        <section>
+          <button
+            className='size'
+            onClick={() => this.handleSort('XXL')}
+          >
+            XXL
+          </button>
           <form>
             <select
               className='border bg-transparent p-3 border-gray-500'
@@ -140,10 +147,15 @@ class App extends React.Component {
         </section>
         <div
           onClick={this.handleCart}
-          className='bg-black inline-block p-2 rounded-lg'
+          className='inline-block p-2 rounded-lg icon'
         >
+          <div className='circle' onClick={this.addQuantity}>0
+            
+          </div>
           <img src='/static/bag-icon.png' alt='bag-icon.png' />
         </div>
+        </section>
+        
         <section className={this.state.toggle ? 'display' : 'none'}>
           <p onClick={this.handleCart}>X</p>
           <h3>cart</h3>
@@ -155,7 +167,7 @@ class App extends React.Component {
         <section className='flex flex-col md:flex md:flex-row md:flex-wrap'>
           {productsArray.map((eachProduct) => (
             <article
-              className='article w-10/12 md:w-6/12 lg:w-3/12 p-3 border text-center m-auto mt-2 shadow-sm'
+              className='article'
               key={eachProduct.id}
             >
               <img
@@ -167,10 +179,11 @@ class App extends React.Component {
               </p>
               <p>{eachProduct.style}</p>
               <p>{eachProduct.availableSizes}</p>
+              <div className='currency'>
               <p>{eachProduct.currencyFormat}</p>
-              <p>{eachProduct.description}</p>
               <p>{eachProduct.price}</p>
-              <button className='button' onClick={() => this.handleAddToCart(eachProduct)}>
+              </div>
+              <button className='cart' onClick={() => this.handleAddToCart(eachProduct)}>
                 Add to the cart
               </button>
             </article>

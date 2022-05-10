@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "availableSizes": ["S", "XS"],
+      "availableSizes": ["S"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "4 MSL",
@@ -27,7 +27,7 @@
       "title": "Dark Thug Blue-Navy T-Shirt"
     },
     {
-      "availableSizes": ["X", "L", "XL"],
+      "availableSizes": ["XL"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "GPX Poly 1",
@@ -40,7 +40,7 @@
       "title": "Sphynx Tie Dye Wine T-Shirt"
     },
     {
-      "availableSizes": ["X", "L", "XL", "XXL"],
+      "availableSizes": ["XXL"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "Treino 2014",
@@ -53,7 +53,7 @@
       "title": "Skuul"
     },
     {
-      "availableSizes": ["X", "L"],
+      "availableSizes": ["XL"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "",
@@ -66,7 +66,7 @@
       "title": "Wine Skul T-Shirt"
     },
     {
-      "availableSizes": ["X", "L", "XL", "XXL"],
+      "availableSizes": ["XXL"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "14/15 s/nº",
@@ -79,20 +79,20 @@
       "title": "Cat Tee Black T-Shirt"
     },
     {
-      "availableSizes": ["X", "L", "XL", "XXL"],
+      "availableSizes": ["L"],
       "currencyFormat": "$",
+      "price": 10.9,
       "currencyId": "USD",
       "description": "14/15 s/nº",
       "id": 1,
       "installments": 9,
       "isFreeShipping": true,
-      "price": 10.9,
       "sku": 18644119330491310,
       "style": "Preta com listras brancas",
       "title": "Sphynx Tie Dye Grey T-Shirt"
     },
     {
-      "availableSizes": ["X", "L"],
+      "availableSizes": ["X"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "14/15 s/nº",
@@ -105,7 +105,7 @@
       "title": "Danger Knife Grey"
     },
     {
-      "availableSizes": ["X", "L"],
+      "availableSizes": ["XS"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "2014 s/nº",
@@ -131,7 +131,7 @@
       "title": "Born On The Streets"
     },
     {
-      "availableSizes": ["X", "L", "XL"],
+      "availableSizes": ["X"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "14/15 + Camiseta 1º Mundial",
@@ -144,7 +144,7 @@
       "title": "Tso 3D Short Sleeve T-Shirt A"
     },
     {
-      "availableSizes": ["XL", "XXL"],
+      "availableSizes": ["XXL"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "Goleiro 13/14",
@@ -183,7 +183,7 @@
       "title": "Tso 3D Black T-Shirt"
     },
     {
-      "availableSizes": ["L", "XL"],
+      "availableSizes": ["L"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "",
@@ -192,11 +192,11 @@
       "isFreeShipping": true,
       "price": 134.9,
       "sku": 11600983276356164,
-      "style": "",
+      "style": "Azul escuro",
       "title": "Crazy Monkey Grey"
     },
     {
-      "availableSizes": ["L", "XL"],
+      "availableSizes": ["L"],
       "currencyFormat": "$",
       "currencyId": "USD",
       "description": "",
@@ -205,7 +205,7 @@
       "isFreeShipping": true,
       "price": 49,
       "sku": 27250082398145996,
-      "style": "",
+      "style": "Azul escuro",
       "title": "On The Streets Black T-Shirt"
     }
   ]
