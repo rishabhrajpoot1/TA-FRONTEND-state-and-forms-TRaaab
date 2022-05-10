@@ -39,11 +39,13 @@ class EachProduct extends React.Component {
           />
           <p>{this.props.eachProduct.title}</p>
           <p>quantity : {this.state.quantity}</p>
+          <div className='increase'>
           <button onClick={() => this.onTrigger(this.props.eachProduct.id)}>
             Delete
           </button>
           <button onClick={this.addQuantity}>+</button>
           <button onClick={this.removeQuantity}>-</button>
+          </div>
         </article>
       </>
     );
